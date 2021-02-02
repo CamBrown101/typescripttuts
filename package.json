@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  },
+  "name": "typescripttuts",
+  "version": "1.0.0",
+  "description": "Learning TypeScript",
+  "main": "index.js",
+  "dependencies": {},
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamBrown101/typescripttuts.git"
+  },
+  "author": "Cam Brown",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamBrown101/typescripttuts/issues"
+  },
+  "homepage": "https://github.com/CamBrown101/typescripttuts#readme"
+}
