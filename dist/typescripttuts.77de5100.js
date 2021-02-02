@@ -118,7 +118,26 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.ts":[function(require,module,exports) {
-console.log('hello world');
+var isOpen = false;
+var myName = 'Cam';
+var myAge = 31; //declaring an array of numbers
+
+var list = [0, 1, 2]; //Tupal, every time it will be a string an a number
+
+var me = ['Cam', 31, false]; //enum, like a list, the variable has to be something in the list
+
+var Job;
+
+(function (Job) {
+  Job[Job["WebDev"] = 0] = "WebDev";
+  Job[Job["WebDesigner"] = 1] = "WebDesigner";
+  Job[Job["PM"] = 2] = "PM";
+})(Job || (Job = {}));
+
+var job = Job.WebDev; //any can be anything
+
+var phone = 'Pixel';
+var tablet = 3; //never
 },{}],"../../../.nvm/versions/node/v10.20.1/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -147,7 +166,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51004" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53553" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
