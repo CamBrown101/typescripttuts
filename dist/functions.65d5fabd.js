@@ -128,9 +128,15 @@ var sayWord = function sayWord(word) {
     return word;
 };
 sayWord('Cam', 'Scott');
+//Implicit types
 var newName = 'Cam';
 newName = 'Scott';
-newName = 10;
+// newName = 10;
+console.log(newName);
+//Infiring types from another variable
+//Gets type infornmation from initialization
+var newNameTwo = newName;
+// newNameTwo = 10;
 },{}],9:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

@@ -22,6 +22,13 @@ const sayWord = (word = 'Hello', ...otherStuff: string[]): string => {
 
 sayWord('Cam', 'Scott');
 
+//Implicit types
 let newName = 'Cam';
 newName = 'Scott';
-newName = 10;
+// newName = 10;
+console.log(newName);
+
+//Infiring types from another variable
+//Gets type infornmation from initialization
+let newNameTwo = newName;
+// newNameTwo = 10;
