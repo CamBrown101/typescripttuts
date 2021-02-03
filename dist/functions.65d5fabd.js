@@ -103,26 +103,17 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({4:[function(require,module,exports) {
-var isOpen = false;
-var myName = 'Cam';
-var myAge = 31;
-//declaring an array of numbers
-var list = [0, 1, 2];
-//Tupal, every time it will be a string an a number
-var me = ['Cam', 31, false];
-//enum, like a list, the variable has to be something in the list
-var Job;
-(function (Job) {
-    Job[Job["WebDev"] = 0] = "WebDev";
-    Job[Job["WebDesigner"] = 1] = "WebDesigner";
-    Job[Job["PM"] = 2] = "PM";
-})(Job || (Job = {}));
-var job = Job.WebDev;
-//any can be anything
-var phone = 'Pixel';
-var tablet = 3;
-//never
+})({12:[function(require,module,exports) {
+//functions in TypeScript
+var sayHello = function sayHello() {
+    console.log('hello');
+};
+sayHello();
+var sayWord = function sayWord(word) {
+    console.log(word);
+    return word;
+};
+sayWord('Cam');
 },{}],4:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -293,5 +284,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[4,4], null)
-//# sourceMappingURL=/typescripttuts.30a7a81c.map
+},{}]},{},[4,12], null)
+//# sourceMappingURL=/functions.65d5fabd.map
