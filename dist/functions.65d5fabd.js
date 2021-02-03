@@ -129,15 +129,29 @@ var sayWord = function sayWord(word) {
 };
 sayWord('Cam', 'Scott');
 //Implicit types
+// Union types with |
 var newName = 'Cam';
 newName = 'Scott';
-// newName = 10;
+newName = 10;
 console.log(newName);
 //Infiring types from another variable
 //Gets type infornmation from initialization
 var newNameTwo = newName;
-// newNameTwo = 10;
-},{}],9:[function(require,module,exports) {
+newNameTwo = 10;
+//Union types with functions
+var makeMargin = function makeMargin(x) {
+    return "margin: " + x + "px;";
+};
+makeMargin(10);
+makeMargin('Scott');
+// makeMargin(false);
+//Null types
+//Can be string or undefined or null
+var dog = 'Sammy';
+dog = null;
+dog = 'Lucie';
+//strict null check
+},{}],4:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -166,7 +180,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55753' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '59468' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -307,5 +321,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[9,6], null)
+},{}]},{},[4,6], null)
 //# sourceMappingURL=/functions.65d5fabd.map
